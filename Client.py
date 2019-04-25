@@ -1,6 +1,7 @@
 import socket, threading, sys, pickle
 '''
 Palindrome Client
+By: Alex Campomizzi
 '''
 class Client:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
