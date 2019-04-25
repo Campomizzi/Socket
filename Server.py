@@ -13,7 +13,7 @@ class Server:
         self.sock.bind((ip, int(port)))
         #Binding our server to an IP and port
         self.sock.listen(2)
-        #Listening for clients. (Up to 2 clients)
+        #Listening for client. 
         print(f"Server has started. IP: {ip}, PORT: {port}")
 
     def handler(self, c, a):
@@ -44,7 +44,7 @@ class Server:
     def run(self):
         while True:
             c, a = self.sock.accept()
-            #c = conneciton. a = address of the connection
+            #c = connection. a = address 
 
             cThread = threading.Thread(target=self.handler, args=(c,a))
             cThread.daemon = True
