@@ -1,6 +1,7 @@
 import socket, threading, pickle, sys, string
 '''
 Palindrome Server
+By: Alex Campomizzi
 '''
 class Server:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
